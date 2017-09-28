@@ -29,14 +29,14 @@ class App extends Component {
   // }
 
   lookupPlayer(player_num){
-    console.log('working');
+    console.log(player_num);
 
     var uname;
 
     if(player_num === 1){
       uname = this.player1Input.value;
     }else{
-uname = this.player2Input.value;
+      uname = this.player2Input.value;
     }
 
 
@@ -76,7 +76,7 @@ uname = this.player2Input.value;
                 <input ref={(input) => {this.player2Input = input; }}/>
                 <Button onClick={() => this.lookupPlayer(2)} waves='light'>Lookup</Button>
 
-              <PlayerProfile player_data={this.state.player1}/>
+              <PlayerProfile player_data={this.state.player2}/>
 
           </Col>
         </Row>
