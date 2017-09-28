@@ -33,19 +33,19 @@ class App extends Component {
 
     var uname;
 
-    if(player_num == 1){
+    if(player_num === 1){
       uname = this.player1Input.value;
     }else{
 uname = this.player2Input.value;
     }
-    
+
 
      fetch(`https://api.github.com/users/${uname}`)
     .then(function(response){
       return response.json()
     })
     .then((response) => {
-      if(player_num == 1){
+      if(player_num === 1){
               this.setState({player1: response})
             }else{
               this.setState({player2: response})

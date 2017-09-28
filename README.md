@@ -1,6 +1,13 @@
 # GitWars
 
-This app is an exercise for teaching React js. We created an app with hits the Github API with 2 different usernames. the app has an algorithm wich tells the user who has the best account.
+This app is a simple game which compares 2 github users. Who ever has the most followers wins the game.
+
+
+### Features
+
+- Search or Lookup function
+- Display user picture bio, repos, followers.
+- Display Result
 
 ### Usage
 
